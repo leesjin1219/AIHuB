@@ -12,7 +12,7 @@ def main():
     #     print(filename)
 
     # step 2: 파일 이름을 읽고, 양품과 불량품을 구분하여 폴더에 정리하기
-    acc_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective\\acceptance'
+    acc_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective\\acceptance'  # get path
     def_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective\\defective'
 
     os.makedirs(acc_root, exist_ok=True)
