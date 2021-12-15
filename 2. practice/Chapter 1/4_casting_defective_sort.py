@@ -3,7 +3,7 @@ import cv2
 
 def main():
 
-    image_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective'
+    image_root = r'C:\Users\user\Desktop\AIHub data zip\1. casting_defective'
 
     # step 1: 데이터 폴더 내 파일 확인하기
     files = os.listdir(image_root)
@@ -12,8 +12,8 @@ def main():
     #     print(filename)
 
     # step 2: 파일 이름을 읽고, 양품과 불량품을 구분하여 폴더에 정리하기
-    acc_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective\\acceptance'  # get path
-    def_root = 'C:\\Users\\user\\Desktop\\AIHub data\\1. casting_defective\\defective'
+    acc_root = r'C:\Users\user\Desktop\AIHub data zip\1. casting_defective_labelled\acceptance'  # get path
+    def_root = r'C:\Users\user\Desktop\AIHub data zip\1. casting_defective_labelled\defective'
 
     os.makedirs(acc_root, exist_ok=True)
     os.makedirs(def_root, exist_ok=True)
@@ -30,9 +30,6 @@ def main():
         image = cv2.imread(image_path)
 
         cv2.imwrite(save_path, image)
-
-
-
 
 
 if __name__ == '__main__':
